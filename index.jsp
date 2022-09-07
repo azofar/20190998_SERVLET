@@ -17,6 +17,26 @@
     	</div>
     </nav>
     <%-- CLASS는 스타일 적용시에 사용 되는 이름, 중첩 가능 --%>
-    메시지는 =  <%=h.hello() %> 입니다.
-</body>	
+    
+    <%! String greeting = "Welcome to Web Shopping Mall";
+      String tagline = "Welcome to Web Market!";%>
+	<div class="jumbotron">
+		<div class="container">
+			<h1 class="display-3">
+				<%=greeting%>
+			</h1>
+		</div>
+	</div>	
+	<div class="container">
+		<div class="text-center">
+			<h3>
+				<%=tagline%>
+			</h3>
+		</div>
+		<hr>
+	</div>	
+	<footer class="container">
+		<p>&copy; WebMarket</p>
+	</footer>
+</body>
 </html>
