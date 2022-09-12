@@ -1,4 +1,6 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
+<%@ page import="java.util.Date"%>
+
 <%@ page import="example.*" %> 
 <%
     HelloWorld h = new HelloWorld();
@@ -6,37 +8,11 @@
 <html>
     <head>
             <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <title> WELCOME </title>
+        <title> 반갑습니다. 개인 쇼핑몰 사이트입니다. </title>
     </head>
 <body> <%-- JSP 주석처리 --%>
-    <nav class ="navbar navbar-expand navbar-dark bg-dark">
-        <div class ="container">
-         	<div class ="navbar-header">
-             	<a class ="navbar-brand" href ="./index.jsp"> HOME </a>
-        	</div>
-    	</div>
-    </nav>
-    <%-- CLASS는 스타일 적용시에 사용 되는 이름, 중첩 가능 --%>
-    
-    <%! String greeting = "Welcome to Web Shopping Mall";
-      String tagline = "Welcome to Web Market!";%>
-	<div class="jumbotron">
-		<div class="container">
-			<h1 class="display-3">
-				<%=greeting%>
-			</h1>
-		</div>
-	</div>	
-	<div class="container">
-		<div class="text-center">
-			<h3>
-				<%=tagline%>
-			</h3>
-		</div>
-		<hr>
-	</div>	
-	<footer class="container">
-		<p>&copy; WebMarket</p>
-	</footer>
+  	<%@ include file="top_menu.jsp" %>
+	<%@ include file="body_main.jsp" %>	
+    <%@ include file="footer.jsp" %>
 </body>
 </html>
