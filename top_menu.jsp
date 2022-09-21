@@ -15,7 +15,7 @@
     </div>
     
     <div>
-        <img src="img\GOODPANG.gif" class="img-fluid" alt="GOODPANG.COM">
+        <img src="img\francistomcat.gif" class="img-fluid" alt="Francis TomCat">
     </div>
     
     <div class ="container">

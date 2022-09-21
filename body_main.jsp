@@ -1,15 +1,45 @@
-<%@ page contentType = "text/html;charset=utf-8" %>
+<%@ page contentType="text/html;charset=utf-8" %>
+<%@ page import="java.util.ArrayList"%>
+<%@ page import="dto.Product"%>
+<jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
     
-<%! String greeting = "굿팡.com에 오신 것을 환영합니다."; //string 타입으로 변수 선언문으로 초기화 하고 표현문으로
-    String tagline = "하단페이지 : 확인";%>
-<div class="jumbotron">
-	<div class="container">
-		<h1 class="display-3">
-			<%=greeting%>
-		</h1>
+<%! String greeting="Welcome Francis TomCat"; //string 타입으로 변수 선언문으로 초기화 하고 표현문으로
+    String tagline="하단페이지 : 확인";%>
+<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">
+                <%=greeting%>
+			</h1>
+		</div>
 	</div>
+<%
+	ArrayList<Product> listOfProducts = productDAO.getAllProducts();
+%>
+    <div class="container">
+        <div class="row" align="center">
+        <%
+            for(int i = 0; i<listOfProducts.size(); i++) {
+                Product product = listOfProducts.get(i);
+                %>
+            <div class="col-md-4">
+                <h3>
+                    <%=product.getPname()%>
+                </h3>
+                <p>
+                    <%=product.getDescription()%>
+                </p>
+                <p>
+                    <%=product.getUnitPrice()%>$
+                </p>
+            </div>
+        <%
+            }
+        %>
+        </div>
+        <hr>
+    </div>
 </div>
-
 <div class="card bg-dark text-dark">
     <img src="img/perfume3.png" class="card-img" alt="...">
     <div class="card-img-overlay">
