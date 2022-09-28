@@ -22,11 +22,11 @@ public class ProductRepository {
         perfume2.setCondition("Refurbished");
         
         Product perfume3 = new Product("P1236", "Citrus Verbena", 49);
-        perfume3.setDescription("Grapefruit, Verbena, Cedarwood");
+        perfume3.setDescription("Grapefruit Extract, Citrus Verbena, Cedar wood");
         perfume3.setCategory("perfume3");
         perfume3.setManufacturer("Loccitane");
         perfume3.setUnitsInStock(1000);
-        perfume3.setCondition("Old");
+        perfume3.setCondition("Old");	
         
         listOfProducts.add(perfume1);
         listOfProducts.add(perfume2);
@@ -35,4 +35,17 @@ public class ProductRepository {
     public ArrayList<Product> getAllProducts() {
         return listOfProducts;
     }
+    public Product getProductById(String productId) {
+        Product productById = null;
+        
+        for(int i = 0; i< listOfProducts.size(); i++) {
+            Product product = listOfProducts.get(i);
+            if(product != null && product.getProductId() != null && product.getProductId().equals(productId)) {
+                productById = product;
+                break;
+            }
+        }
+        return productById;
+    }
+    
 }
