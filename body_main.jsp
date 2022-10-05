@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8" %>
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="dto.Product"%>
-<jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
+<%@ page import="dao.ProductRepository"%>
     
 <%! String greeting="Welcome Francis TomCat"; //string 타입으로 변수 선언문으로 초기화 하고 표현문으로
     String tagline="하단페이지 : 확인";%>
@@ -14,7 +14,8 @@
 		</div>
 	</div>
 <%
-	ArrayList<Product> listOfProducts = productDAO.getAllProducts();
+    ProductRepository dao = ProductRepository.getInstance();
+	ArrayList<Product> listOfProducts = dao.getAllProducts();
 %>
     <div class="container">
         <div class="row" align="center">
