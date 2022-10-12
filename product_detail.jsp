@@ -39,7 +39,7 @@
                     <h4><%=product.getUnitPrice()%>$</h4>
                     
                     <div class="card bg-dark text-white">
-                        <img src="img/product/<%=product.getProductId()%>.PNG" class="card-img" alt="...">
+                        <img src="img/product/<%=product.getFilename()%>" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title">상품 이미지 원본</h5>
                             <p class="card-text">출처 : 구글 검색</p>

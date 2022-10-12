@@ -13,6 +13,7 @@ public class Product implements Serializable{ //자바에서 인터페이스 구
     private String category; //분류
     private long unitsInStock; //재고
     private String condition; //상태
+    private String filename; //파일 이름 변수
     
     
     public Product() {
@@ -70,5 +71,11 @@ public class Product implements Serializable{ //자바에서 인터페이스 구
     }
     public void setCondition(String condition) {
         this.condition = condition;
+    }
+    public void setFilename(String filename) { //파일 이름 설정
+        this.filename = filename;
+    }
+    public String getFilename(){ //파일 이름 리턴
+        return filename;
     }
 }

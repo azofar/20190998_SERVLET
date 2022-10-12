@@ -18,6 +18,7 @@ public class ProductRepository {
         perfume1.setManufacturer("Dolce & Gabbana");
         perfume1.setUnitsInStock(1000);
         perfume1.setCondition("New");
+        perfume1.setFilename("P1234.PNG");
         
         Product perfume2 = new Product("P1235", "Sauvage", 89);
         perfume2.setDescription("Reggio Calabria bergamot, Ambergris, Marine wood");
@@ -25,13 +26,15 @@ public class ProductRepository {
         perfume2.setManufacturer("Dior");
         perfume2.setUnitsInStock(1000);
         perfume2.setCondition("Refurbished");
+        perfume2.setFilename("P1235.PNG");
         
         Product perfume3 = new Product("P1236", "Citrus Verbena", 49);
         perfume3.setDescription("Grapefruit Extract, Citrus Verbena, Cedar wood");
         perfume3.setCategory("perfume3");
         perfume3.setManufacturer("Loccitane");
         perfume3.setUnitsInStock(1000);
-        perfume3.setCondition("Old");	
+        perfume3.setCondition("Old");
+        perfume3.setFilename("P1236.PNG");
         
         listOfProducts.add(perfume1);
         listOfProducts.add(perfume2);
