@@ -9,9 +9,10 @@
 	request.setCharacterEncoding("UTF-8");
 
 	String filename = "";
-	String realFolder = request.getServletContext().getRealPath("img/product");
-	String encType = "utf-8";
-	int maxSize = 5 * 1024 * 1024;
+	String realFolder = request.getServletContext().getRealPath("img/product"); //웹 어플리케이션 상의 절대 경로 / 서버 업로드 경로 로딩
+	String encType = "utf-8"; //인코딩 타입
+ 	int maxSize = 5 * 1024 * 1024; //최대 업로드 될 파일의 크기 5Mb
+
 	DefaultFileRenamePolicy policy = new DefaultFileRenamePolicy();
 	MultipartRequest multi = new MultipartRequest(request, realFolder, maxSize, encType, policy);
 
