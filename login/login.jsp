@@ -9,7 +9,7 @@
         <title> 로그인 페이지 </title>
     </head>
     <body>
-        <jsp:include page="../admin/top_menu_ad.jsp" />
+        <jsp:include page="../top_menu.jsp" />
         <div class ="jumbotron">
             <div class ="container">
                 <h1 class="display-3">

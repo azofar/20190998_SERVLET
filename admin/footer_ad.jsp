@@ -17,5 +17,6 @@
         String CT = hour + ":" + minute + ":" + second + " " + am_pm; //'+'는 문자열 나열할 때
         out.println("현재 접속  시각: " + CT + "\n");
         %>
+        <a href="../login/logout.jsp" class="btn btn-sm btn-success pull-right">로그아웃</a>
     </p>
 </footer>

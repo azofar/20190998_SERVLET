@@ -8,7 +8,7 @@
 <div class="container">
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-3">
+            <h1 class="display-5">
                 <%=greeting%>
 			</h1>
 		</div>
@@ -50,26 +50,4 @@
         </div>
         <hr>
     </div>
-</div>
-<div class="card bg-dark text-dark">
-    <img src="img/perfume3.png" class="card-img" alt="...">
-    <div class="card-img-overlay">
-        <h5 class="card-title">향수 종류</h5>
-        <p class="card-text">출처 : Cruu De D'or</p>
-    </div>
-</div>
-
-<div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-        Burberry
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        Maison Margiela
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        Dolce & Gabbana
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        Lanvin
-    </a>
 </div>
