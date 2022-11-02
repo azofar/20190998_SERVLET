@@ -14,6 +14,7 @@ public class Product implements Serializable{ //자바에서 인터페이스 구
     private long unitsInStock; //재고
     private String condition; //상태
     private String filename; //파일 이름 변수
+    private int quantity; //장바구니에 담은 개수
     
     
     public Product() {
@@ -77,5 +78,11 @@ public class Product implements Serializable{ //자바에서 인터페이스 구
     }
     public String getFilename(){ //파일 이름 리턴
         return filename;
+    }
+    public int getQuantity() {
+        return quantity;
+    }
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
     }
 }
