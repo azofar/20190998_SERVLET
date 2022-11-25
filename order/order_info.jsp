@@ -6,6 +6,9 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="/Delivery_func.js"></script>
+        <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+        <script src="/Map_func.js"></script>
         
         <title>배송 정보</title>
     </head>
@@ -31,7 +34,7 @@
                 <div class="form-group row">
                     <label class="col-sm-2">배송일</label>
                     <div class="col-sm-3">
-                        <input name="shippingDate" type="text" class="form-control" />(yyyy/mm/dd)
+                        <input id = "Date" name="shippingDate" type="date" class="form-control" />(yyyy/mm/dd)
                     </div>
                 </div>
                 <div class="form-group row">
@@ -48,13 +51,15 @@
                 <div class="form-group row">
                     <label class="col-sm-2">우편번호</label>
                     <div class="col-sm-3">
-                        <input name="zipCode" type="text" class="form-control" />
+                        <input id="sample6_postcode" name="zipCode" type="text" class="form-control" />
                     </div>
+                    <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
                 </div>
+
                 <div class="form-group row">
                     <label class="sol-sm-2">주소</label>
                     <div class="col-sm-5">
-                        <input name="addressName" type="text" class="form-control" />
+                        <input id="sample6_address" name="addressName" type="text" class="form-control" />
                     </div>
                 </div>
                 <div class="form-group row">

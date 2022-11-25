@@ -1,24 +1,24 @@
 package dto;
-import java.io.Serializable; //객체직렬화
+import java.io.Serializable;
 
-public class Product implements Serializable{ //자바에서 인터페이스 구현
+public class Product implements Serializable{
     
     private static final long serialVersionUID = -4274700572038677000L;
         
-    private String productId; //상품 아이디
-    private String pname; //상품명
-    private Integer unitPrice; //상품가격
-    private String description; //상품설명
-    private String manufacturer; //제조사
-    private String category; //분류
-    private long unitsInStock; //재고
-    private String condition; //상태
-    private String filename; //파일 이름 변수
-    private int quantity; //장바구니에 담은 개수
+    private String productId; 
+    private String pname; 
+    private Integer unitPrice; 
+    private String description; 
+    private String manufacturer; 
+    private String category;
+    private long unitsInStock;
+    private String condition; 
+    private String filename; 
+    private int quantity; 
     
     
     public Product() {
-        super(); //부모 생성자 호출
+        super();
     }
     public Product(String productId, String pname, Integer unitPrice) {
         this.productId = productId;
@@ -73,10 +73,10 @@ public class Product implements Serializable{ //자바에서 인터페이스 구
     public void setCondition(String condition) {
         this.condition = condition;
     }
-    public void setFilename(String filename) { //파일 이름 설정
+    public void setFilename(String filename) { 
         this.filename = filename;
     }
-    public String getFilename(){ //파일 이름 리턴
+    public String getFilename(){
         return filename;
     }
     public int getQuantity() {

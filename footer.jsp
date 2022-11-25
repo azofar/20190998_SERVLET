@@ -15,7 +15,7 @@
             am_pm = "PM";
             hour = hour - 12;
         }
-        String CT = hour + ":" + minute + ":" + second + " " + am_pm; //'+'는 문자열 나열할 때
+        String CT = hour + ":" + minute + ":" + second + " " + am_pm; 
         out.println("현재 접속  시각: " + CT + "\n");
         %>
     </p>
