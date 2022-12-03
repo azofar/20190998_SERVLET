@@ -1,5 +1,6 @@
-<%@ page contentType = "text/html;charset=utf-8" %>
-<%@ page contentType = "java.sql.*" %>
+<%@ page contentType = "text/html;charset=utf-8"%>
+<%@ page import = "java.sql.*"%>
+<%@ page import= "java.util.Date"%> 
 <html>
 
 <head>
@@ -73,7 +74,7 @@
             </div>
             <hr>
         </div>
-        <jsp:include page="footer_ad.jsp" />
+        <jsp:include page="footer_ad.jsp"/>
     </div>
 </body>
 

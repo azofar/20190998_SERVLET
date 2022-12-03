@@ -1,4 +1,5 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
+<%@ page import="java.util.Date" %>
 <html>
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -78,7 +79,7 @@
                 <div class="form-group row">
                     <div class="col-sm-offset-2 col-sm-10">
                         <input type ="button" class="btn btn-primary" value="등록" onclick ="CheckAddProduct()">
-                        
+                        <a href="../login/logout.jsp" class="btn btn-sm btn-success pull-right">로그아웃</a>
                     </div>
                 </div>
             </form>

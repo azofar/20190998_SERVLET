@@ -1,5 +1,5 @@
 <%@ page contentType = "text/html;charset=utf-8" %> 
-<%@ page import="java.util.Date" %> 
+<%@ page import="java.util.Date" %>
 
 <html>
     <head>

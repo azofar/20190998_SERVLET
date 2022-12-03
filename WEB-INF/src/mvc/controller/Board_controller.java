@@ -27,7 +27,7 @@ public class Board_controller extends HttpServlet {
 		String contextPath = request.getContextPath();
 		String command = RequestURI.substring(contextPath.length());
 		
-		response.setContentType("text/html; charset=utf-8");
+		response.setContentType("text/html;charset=utf-8");
 		request.setCharacterEncoding("utf-8");
 	
 		if (command.equals("/BoardListAction.do")) {

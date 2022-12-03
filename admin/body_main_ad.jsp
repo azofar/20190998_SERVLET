@@ -2,6 +2,7 @@
 <%@ page import="java.util.ArrayList"%>
 <%@ page import="dto.Product"%>
 <%@ page import="dao.ProductRepository"%>
+<%@ page import= "java.util.Date"%> 
     
 <%! String greeting="Welcome Francis TomCat"; 
     String tagline="하단페이지 : 확인";%>

@@ -1,5 +1,6 @@
 <%@ page contentType = "text/html;charset=utf-8" %>
 
+
 <footer class="container">
     <p>&copy; 쇼핑몰 대표 : 유훈종 / 고유번호 : 20190998 / 연락처 : gnswhd03@naver.com <br>
         <%
