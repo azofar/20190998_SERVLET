@@ -21,14 +21,6 @@
         <title>고객센터 게시판</title>
         <script type="text/javascript">
     
-            function checkForm() {	
-                if (${sessionId==null}) {
-	                alert("로그인 해주세요.");
-	                location.href = "../login/login.jsp"
-	            return false;
-   	                }
-	            location.href = "./BoardWriteForm.do?id=<%=sessionId%>"
-            }
         </script>
     </head>
     <body>
@@ -105,7 +97,7 @@
                             </td>
                     
                             <td width="100%" align="right">
-	                            <a href="#" onclick="checkForm(); return false;" class="btn btn-primary"> &laquo; 글쓰기</a>
+	                            <a href="./BoardWriteForm.do?id=<%=sessionId%>" class="btn btn-primary">&laquo;글쓰기</a>
                             </td>
                         </tr>
                     </table>
